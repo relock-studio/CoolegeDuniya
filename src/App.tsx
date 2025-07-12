@@ -1,7 +1,39 @@
 import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
-import { AdminProvider } from './contexts/AdminContext';
 import Layout from './components/Layout';
+
+// Page imports
+import Home from './pages/Home';
+import Colleges from './pages/Colleges';
+import Universities from './pages/Universities';
+import Courses from './pages/Courses';
+import Exams from './pages/Exams';
+import StudyAbroad from './pages/StudyAbroad';
+import Scholarships from './pages/Scholarships';
+import Reviews from './pages/Reviews';
+import News from './pages/News';
+import CollegePredictor from './pages/CollegePredictor';
+import Login from './pages/Login';
+import WriteReview from './pages/WriteReview';
+import About from './pages/About';
+
+// Category pages
+import Engineering from './pages/categories/Engineering';
+import MBA from './pages/categories/MBA';
+import Medical from './pages/categories/Medical';
+import Science from './pages/categories/Science';
+import Commerce from './pages/categories/Commerce';
+import Arts from './pages/categories/Arts';
+import Law from './pages/categories/Law';
+// Location pages
+import BangaloreColleges from './pages/locations/BangaloreColleges';
+import DelhiColleges from './pages/locations/DelhiColleges';
+import Agriculture from './pages/categories/Agriculture';
+// Individual college page
+import CollegeDetails from './pages/CollegeDetails';
+import Design from './pages/categories/Design';
+// Admin imports
+import { AdminProvider } from './contexts/AdminContext';
 import AdminLayout from './pages/admin/AdminLayout';
 import AdminLogin from './pages/admin/AdminLogin';
 import AdminDashboard from './pages/admin/AdminDashboard';
@@ -9,9 +41,7 @@ import AdminColleges from './pages/admin/AdminColleges';
 import AdminCollegeForm from './pages/admin/AdminCollegeForm';
 import AdminNews from './pages/admin/AdminNews';
 import AdminSettings from './pages/admin/AdminSettings';
-
-// Page imports
-
+import Education from './pages/categories/Education';
 function App() {
   return (
     <AuthProvider>
